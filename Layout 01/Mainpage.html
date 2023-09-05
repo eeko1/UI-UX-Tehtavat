@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="dialog-style.css">
+    <script src="script.js" defer></script>
     <title>PizzaParty.</title>
 </head>
 <body>
@@ -16,6 +18,30 @@
         </ul>
     </nav>
     <p class="content">Tänne tulee lisää sisältöä seuraavilla viikoilla</p>
+    <button id="open_dialog">Open Dialog</button>
+    <dialog aria-labelledby="dialog_title" aria-describedby="dialog_description">
+      <h1 id="dialog_title" class="h2">Rekistöröidy tiedoillasi</h1>
+      <img src="pizza-animation.gif" alt="Illustration of Location Services" />
+      <form action="" method="get" class="form-sub">
+        <div class="form-sub">
+          <label for="name">Sukunimi, minimi 3 kirjainta: </label>
+          <input type="text" name="name" id="name" autocomplete="name" required minlength="3" pattern="^(?=.[A-Z])(?=.\d).*$"/>
+        </div>
+        <div class="form-sub">
+          <label for="email">Email osoite (@metropolia.fi): </label>
+          <input type="email" name="email" id="email" required  autocomplete="email" minlength="3" pattern=".+@metropolia.fi"/>
+        </div>
+        <div class="form-sub">
+          <label for="password">Salasana: </label>
+          <input type="password" name="password" id="password" required  minlength="3"/>
+        </div>
+      </form>
+      <div class="flex flex-space-between">
+        <button id="confirm_dialog" class="cta" > Confirm</button>
+        <button id="close_dialog">Close</button>
+      </div>
+    </dialog>
+
     <main>
         <img src="customer.jpg" alt="customer-picture" class="customer-picture">
         <img src="pizza-logo.jpg" alt="PizzaParty" class="pizza-picture"/>
