@@ -1,0 +1,100 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;
+      1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" type="x-icon" href="./img/pizza-logo.jpg">
+      <link rel="stylesheet" href="css/nav.css" />
+      <link rel="stylesheet" href="css/banner.css" />
+      <link rel="stylesheet" href="css/content.css" />
+      <link rel="stylesheet" href="css/dialog-style.css" />
+      <link rel="stylesheet" href="css/breakpoints.css" />
+      <script src="script.js" defer></script>
+      <title>PizzaParty.</title>
+  </head>
+  <body>
+      <nav>
+          <ul>
+              <li class="logo">PizzaParty.</li>
+              <li><a href="#Etusivu">Etusivu</a></li>
+              <li><a href="#Ruokalistat">Ruokalistat</a></li>
+              <li><a href="#Yhteystiedot">Yhteystiedot</a></li>
+              <button id="open_dialog">Rekisteröidy palveluun</button>
+          </ul>
+      </nav>
+      <div class="hero-image">
+        <div class="banner-text">
+          <h1>It's Crazy It's PizzaParty!</h1>
+          <p>Tutustu lisää</p>
+        </div>
+      </div>
+     <section id="section-position">
+      <h1 id="Ruokalistat">Pizzatyypit</h1>
+      <div class="paragraph-container">
+        <button>Kana</button>
+        <button>Kebab</button>
+        <button>Kala</button>
+        <button>Kasvis</button>
+        <button>Fantasia</button>
+      </div>
+    </section>
+    <div class="grid-container">
+      <div class="grid-item">
+        <h2>Päivän Tarjoukset!</h2>
+        <h3>PizzaParty lounastarjoukset. (Klo 10-14) </h3>
+        <p>Käärijä Pizza 9€ (Norm. 16€)</p>
+        <p>Metropolia Special 8€ (Norm. 15€)</p>
+        <p>Dinner Date 16€ (Norm. 23€)</p>
+        <div class="button-container">
+          <button>Avaa Menu</button>
+        </div>
+      </div>
+      <div class="grid-item">
+        <h2>Päivän Pizzalista</h2>
+        <p>Käärijä Pizza 16€</p>
+        <p>Suomen Paras Pizza 18€</p>
+        <p>Metropolia Special 15€</p>
+        <p>One hungry Person 25€</p>
+        <p>Dinner Date 23€</p>
+      </div>
+    </div>
+      <main>
+          <img src="./img/pizza-man.jpg" alt="delivery-man" class="customer-picture">
+          <img src="./img/pizza-photo.jpg" alt="PizzaParty" class="pizza-picture"/>
+          <h1>PizzaParty.</h1>
+          <h2>Tämä on meidän tarinamme</h2>
+          <p>Lounarin tuotevalikoima on omassa keittiössä valmistettu. Käytämme aina tuoreita raaka-aineita ja
+            otamme huomioon erityisruokavaliot. Valikoimamme vaihtelee sesonkien ja saatavuuden mukaan päivittäin. Tavoitteenamme
+            on Metropolian kampusuudistuksen myödä palvella tulevaisuudessa yhdenvertaisesti kaikkia metropolialaisia.
+          </p>
+      </main>
+      <footer>Copyright, Eemu</footer>
+      <dialog class="dialog" aria-labelledby="dialog_title" aria-describedby="dialog_description">
+        <h1 id="dialog_title" class="h2">Rekistöröidy tiedoillasi</h1>
+        <img src="./img/pizza-animation.gif" alt="Pizza-animation" />
+        <form class="myForm" method="post">
+          <div class="form-group">
+            <label for="username">Käyttäjätunnus:    </label>
+            <input type="text" name="username" autocomplete="name" id="nimikentta" placeholder="Matti_Meikäläinen" minlength="3" required="">
+          </div>
+          <div class="form-group">
+            <label for="yourEmail">Email osoite:</label>
+          <input type="email" name="yourEmail" id="Email" pattern=".+@metropolia.fi" placeholder="@metropolia.fi" required="">
+          </div>
+          <div class="form-group">
+            <label for="password">Salasana:</label>
+            <input type="password" name="password" id="pwd" placeholder="Salasana" patter="^(?!.[\s])(?=.[A-Z])(?=.*[a-zA-Z]).{8,}$" required="" class="input-field">
+          </div>
+          <input type="submit" value="Send">
+        </form>
+        <div class="flex flex-space-between">
+          <button id="confirm_dialog" class="cta" > Confirm</button>
+          <button id="close_dialog">Close</button>
+        </div>
+      </dialog>
+  </body>
+  </html>

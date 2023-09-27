@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1000px) {
+  #logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 20px;
+  }
+  ul {
+    font-size: 15px;
+  }
+  .customer-picture {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .pizza-picture {
+    float: none;
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  #hero-image {
+    height: 150px;
+  }
+  #banner-text {
+    font-size: 20px;
+  }
+    li {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    p {
+      font-size: 15px;
+    }
+  #open_dialog {
+    margin-right: 120px;
+  }
+
+  }
+  @media only screen and (max-width: 700px) {
+    .customer-picture {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -80px;
+    right: -40px;
+    margin-left: 20px;
+    }
+    .pizza-picture {
+      float: none;
+      max-width: 100%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    #open_dialog {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .customer-picture {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: -80px;
+      right: -100px;
+      margin-left: 20px;
+      }
+      .pizza-picture {
+        float: none;
+        max-width: 100%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      .banner-text h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+  }
