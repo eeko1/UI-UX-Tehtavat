@@ -1,3 +1,14 @@
+@media only screen and (max-width: 1140px) {
+  .hovering-picture {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    margin-left: 20px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
   #logo {
     font-size: 25px;
@@ -9,14 +20,14 @@
   ul {
     font-size: 15px;
   }
-  .customer-picture {
+  .hovering-picture {
     float: right;
   }
 }
 
 @media only screen and (max-width: 750px) {
   .pizza-picture {
-    float: none;
+    float: left;
     max-width: 100%;
     width: 300px;
     height: 200px;
@@ -42,7 +53,7 @@
 
   }
   @media only screen and (max-width: 700px) {
-    .customer-picture {
+    .hovering-picture {
     width: 200px;
     height: 200px;
     position: absolute;
@@ -68,7 +79,7 @@
   }
 
   @media only screen and (max-width: 570px) {
-    .customer-picture {
+    .hovering-picture {
       width: 200px;
       height: 200px;
       position: absolute;
@@ -84,7 +95,7 @@
         object-fit: cover;
       }
       .banner-text h1 {
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 10px;
       }
   }

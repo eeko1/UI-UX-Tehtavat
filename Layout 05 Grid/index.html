@@ -5,11 +5,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;
-      1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Raleway:ital,wght@0,
+      300;0,400;1,300;1,400&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
       <link rel="shortcut icon" type="x-icon" href="./img/pizza-logo.jpg">
       <link rel="stylesheet" href="css/nav.css" />
-      <link rel="stylesheet" href="css/banner.css" />
       <link rel="stylesheet" href="css/content.css" />
       <link rel="stylesheet" href="css/dialog-style.css" />
       <link rel="stylesheet" href="css/breakpoints.css" />
@@ -19,7 +20,7 @@
   <body>
       <nav>
           <ul>
-              <li class="logo">PizzaParty.</li>
+              <li class="logo" id="Etusivu">PizzaParty.</li>
               <li><a href="#Etusivu">Etusivu</a></li>
               <li><a href="#Ruokalistat">Ruokalistat</a></li>
               <li><a href="#Yhteystiedot">Yhteystiedot</a></li>
@@ -28,12 +29,11 @@
       </nav>
       <div class="hero-image">
         <div class="banner-text">
-          <h1>It's Crazy It's PizzaParty!</h1>
-          <p>Tutustu lisää</p>
+          <h1>It's Crazy It's...</h1>
         </div>
       </div>
      <section id="section-position">
-      <h1 id="Ruokalistat">Pizzatyypit</h1>
+      <h1>Pizzatyypit</h1>
       <div class="paragraph-container">
         <button>Kana</button>
         <button>Kebab</button>
@@ -42,16 +42,14 @@
         <button>Fantasia</button>
       </div>
     </section>
-    <div class="grid-container">
+    <div id="Ruokalistat" class="grid-container">
       <div class="grid-item">
-        <h2>Päivän Tarjoukset!</h2>
-        <h3>PizzaParty lounastarjoukset. (Klo 10-14) </h3>
+        <h2>PizzaParty lounastarjoukset. (Klo 10-14) </h2>
         <p>Käärijä Pizza 9€ (Norm. 16€)</p>
         <p>Metropolia Special 8€ (Norm. 15€)</p>
         <p>Dinner Date 16€ (Norm. 23€)</p>
-        <div class="button-container">
-          <button>Avaa Menu</button>
-        </div>
+        <p>PizzaParty Grab&Go Slices 4€ (Norm. 8€)</p>
+        <p>Pepsi Max 0.5l 2.5€ (Norm. 3€)</p>
       </div>
       <div class="grid-item">
         <h2>Päivän Pizzalista</h2>
@@ -61,9 +59,19 @@
         <p>One hungry Person 25€</p>
         <p>Dinner Date 23€</p>
       </div>
+      <div class="grid-item2">
+        <h1>"Ihan kuin äidin tekemää."</h1>
+        <img src="/img/thumbs-up.jpg" alt="Äidin tekemää" >
+        <p>Tule itse maistamaan, pizzamme valmistetaan pelkästään suomalaisista raaka-aineista!</p>
+      </div>
+      <div class="grid-item2">
+        <h1>"Ain't no party like a pizza party."</h1>
+        <img src="/img/pizza-zone.jpg" alt="birthday-party">
+        <p>Voitte tilata meiltä pizzat vaikka lapsen syntymäpäiväjuhliin!</p>
+      </div>
     </div>
       <main>
-          <img src="./img/pizza-man.jpg" alt="delivery-man" class="customer-picture">
+          <img src="./img/hovering-image.jpg" alt="pizza-mascot" class="hovering-picture">
           <img src="./img/pizza-photo.jpg" alt="PizzaParty" class="pizza-picture"/>
           <h1>PizzaParty.</h1>
           <h2>Tämä on meidän tarinamme</h2>
@@ -72,7 +80,7 @@
             on Metropolian kampusuudistuksen myödä palvella tulevaisuudessa yhdenvertaisesti kaikkia metropolialaisia.
           </p>
       </main>
-      <footer>Copyright, Eemu</footer>
+      <footer id="Yhteystiedot">Copyright, Eemu</footer>
       <dialog class="dialog" aria-labelledby="dialog_title" aria-describedby="dialog_description">
         <h1 id="dialog_title" class="h2">Rekistöröidy tiedoillasi</h1>
         <img src="./img/pizza-animation.gif" alt="Pizza-animation" />

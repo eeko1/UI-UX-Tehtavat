@@ -21,6 +21,18 @@ main {
   padding: 10px;
   border: 1px solid #333;
   border-style: dashed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+}
+.grid-item2 {
+  flex-basis: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #333;
+  border-style: dashed;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -30,19 +42,27 @@ main {
   border-radius: 25px;
 }
 
-.button-container {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.button-container button:hover {
-  text-decoration: underline;
+.grid-item2 img {
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-attachment: unset;
+  display: flex;
+  align-items: center;
 }
 
 button {
-  margin-right: 90px;
+  text-align: center;
+  align-items: center;
   padding: 10px 20px;
   font-size: 16px;
+  border: 3px solid black;
+  color: orange;
+  background-color: #333;
 }
 
 .content {
@@ -88,9 +108,9 @@ button {
   margin-top: -30px;
 }
 
-.customer-picture {
-  width: 269px;
-  height: 269px;
+.hovering-picture {
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: -80px;
   right: -10px;
